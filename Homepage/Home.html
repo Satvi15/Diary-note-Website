@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/18ef5b7e79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" type="Images/x-icon" href="Images/6771587_diary_education_learning_pencil_school_icon.png">
+    <title>Dairy</title>
+<body>
+  <header>
+    <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>D</span>EAR <span>D</span>iary</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero">profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/Index/index.html" type="button" class="cta">Logout</a></li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  </header>
+  
+    <section id="body-container">
+        <nav>
+            <div class="todo-container">
+                <h2>Todo List</h2>
+                <form>
+                  <input type="text" id="todo-input" placeholder="Add a new task...">
+                  <button type="submit" id="add-btn"><i class="fas fa-plus"></i></button>
+                </form>
+                <div id="todo-section">
+                  <ul id="todo-list">
+                     <!-- Existing tasks will be added dynamically here -->
+                  </ul>
+                </div>
+              </div>        
+        </nav>          
+
+        <article>
+            <div id="date"></div>
+            <div id="Editor">
+                <div class="Toolbar">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                      </div>
+                    <ul class="tool-list">
+                        <li class="tool"><i class="fa-solid fa-bold"></i></li>
+                        <li class="tool"><i class="fa-solid fa-italic"></i></li>
+                        <li class="tool"><i class="fa-solid fa-underline"></i></li>
+                        <li class="tool">
+                            <select name="Font-size" id="Font-size">
+                                <option value="11"><b>Font-size</b></i></option>
+                                <option value="12">12px</option>
+                                <option value="14">14px</option>
+                                <option value="16">16px</option>
+                                <option value="18">18px</option>
+                                <option value="20">20px</option>
+                            </select>
+                        </li>
+                        <li class="tool">
+                            <select name="Heading" id="Heading">
+                            <option value="">Paragraph</option>
+                            <option value="H1">Heading 1</option>
+                            <option value="H2">Heading 2</option>
+                            <option value="H3">Heading 3</option>
+                            <option value="H4">Heading 4</option>
+                            <option value="H5">Heading 5</option>
+                            <option value="H6">Heading 6</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button id="Strikethrough"><i class="fas fa-strikethrough"></i></button>
+                        </li>
+                        <li class="tool">
+                            <i class="fa-solid fa-align-left"></i>
+                            <i class="fa-solid fa-align-center"></i>
+                            <i class="fa-solid fa-align-right"></i>
+                        </li>  
+
+                    </ul>
+                </div>
+            </div>
+            <textarea name="Dairy" id="Dairy-writting" cols="" rows=""></textarea>
+            <button>Save</button>
+        </article>
+    </section>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+    <script src="Home.js"></script>u
+</body>
+</html>
