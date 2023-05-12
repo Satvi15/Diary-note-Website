@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/18ef5b7e79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Homepage/Home.css">
+    <link rel="icon" type="Images/x-icon" href="Images/6771587_diary_education_learning_pencil_school_icon.png">
+    <title>Dairy</title>
+<body>
+  <header>
+    <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>D</span>EAR <span>D</span>iary</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li id="profile-icon"><a href="#hero"><i class="fa-regular fa-user"> <%= user %></i></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/" type="button" class="cta" >Logout</a></li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  </header>
+  
+    <section id="body-container">
+        <nav>
+            <h2 class="id1">Daily Routine</h2>
+            <div>
+                <ul>
+                  <a href="" class="Habit-a"><li class="Habit">Habit Tracker</li></a>
+                  <a href="todo" class="Habit-a" id="Todo"><li class="Habit">TodoList</li></a>
+                </ul>
+              </div>        
+        </nav>          
+
+        <article>
+            
+            <div id="date"></div>
+            <div id="Editor">
+                <div class="Toolbar">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                      </div>
+                    <ul class="tool-list">
+                        <button><li id="bold" class="tool"><i class="fa-solid fa-bold"></i></li></button>
+                        <button><li class="tool"><i class="fa-solid fa-italic"></i></li></button>
+                        <button><li class="tool"><i class="fa-solid fa-underline"></i></li></button>
+                        <li class="tool">
+                            <label for="font-size">Font Size:</label>
+                            <select onchange="changeFontSize(this)">
+                              <option value="10">10</option>
+                              <option value="12">12</option>
+                              <option value="14">14</option>
+                              <option value="18">18</option>
+                              <option value="24">24</option>
+                              <option value="36">36</option>
+                              <option value="48">48</option>
+                              <option value="72">72</option>
+                            </select> 
+                        </li>
+                        <li class="tool">
+                            <button> <i class="fa-solid fa-align-left"></i></button>
+                           
+                            <i class="fa-solid fa-align-center"></i>
+                            <i class="fa-solid fa-align-right"></i>
+                            <input type="date" id="date1" value="">
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <!-- <textarea name="Dairy" id="Dairy-writting" cols="" rows=""><%=dairy%></textarea> -->
+            <div class="editor" name="Dairy" id="Dairy-writting" contenteditable="true"><%=dairy%></div>
+            <button id="Save">Save</button>
+        </article>
+    </section>
+    <%- include('footer'); -%>
+    <script src="/Homepage/Home.js"></script>
+
+</body>
+</html>
